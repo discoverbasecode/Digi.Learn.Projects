@@ -8,4 +8,10 @@ public class Category : BaseEntity
     public string Icon { get; private set; }
     public string Sluge { get; private set; }
 
+    public Category(string title, string icon, string sluge)
+    {
+        Title = title;
+        Icon = icon;
+        Sluge = sluge;
+    }
 }
