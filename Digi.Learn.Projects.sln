@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{71D6F65E-72F1-4B62-B538-77C70B1FDD1C}"
+	ProjectSection(SolutionItems) = preProject
+		Context Digram.png = Context Digram.png
+		Features Digram.png = Features Digram.png
+		Modules Digram.png = Modules Digram.png
+		Solution Relation Digram.png = Solution Relation Digram.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{C650A447-A6E7-449C-8DC6-A74AA994BB88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{CE458E4F-C513-4EE0-BB31-7EA94878ED82}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C859CD6-4F0B-4DA6-91A8-B2B8C8358BF3}
+	EndGlobalSection
+EndGlobal
