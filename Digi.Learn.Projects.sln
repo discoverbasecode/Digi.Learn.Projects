@@ -5,19 +5,43 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{71D6F65E-72F1-4B62-B538-77C70B1FDD1C}"
 	ProjectSection(SolutionItems) = preProject
-		Context Digram.png = Context Digram.png
-		Features Digram.png = Features Digram.png
-		Modules Digram.png = Modules Digram.png
-		Solution Relation Digram.png = Solution Relation Digram.png
+		Docs\Context Digram.png = Docs\Context Digram.png
+		Docs\Features Digram.png = Docs\Features Digram.png
+		Docs\Modules Digram.png = Docs\Modules Digram.png
+		Docs\Solution Relation Digram.png = Docs\Solution Relation Digram.png
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{C650A447-A6E7-449C-8DC6-A74AA994BB88}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{CE458E4F-C513-4EE0-BB31-7EA94878ED82}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EndPoints", "EndPoints", "{94B35F09-C93D-4B51-B832-6487A8E681CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App Modules", "App Modules", "{4136C6D4-838A-4C56-B537-EC3F3AE66325}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framewor", "Framewor", "{76BA7E52-954B-498A-BA83-DF7640C1943D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Core", "Framework.Core\Framework.Core.csproj", "{829F43BC-DF08-471C-8FB8-4ED2D7100D67}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{829F43BC-DF08-471C-8FB8-4ED2D7100D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829F43BC-DF08-471C-8FB8-4ED2D7100D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829F43BC-DF08-471C-8FB8-4ED2D7100D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829F43BC-DF08-471C-8FB8-4ED2D7100D67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94B35F09-C93D-4B51-B832-6487A8E681CF} = {C650A447-A6E7-449C-8DC6-A74AA994BB88}
+		{4136C6D4-838A-4C56-B537-EC3F3AE66325} = {C650A447-A6E7-449C-8DC6-A74AA994BB88}
+		{76BA7E52-954B-498A-BA83-DF7640C1943D} = {C650A447-A6E7-449C-8DC6-A74AA994BB88}
+		{829F43BC-DF08-471C-8FB8-4ED2D7100D67} = {76BA7E52-954B-498A-BA83-DF7640C1943D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C859CD6-4F0B-4DA6-91A8-B2B8C8358BF3}
