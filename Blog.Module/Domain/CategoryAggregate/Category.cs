@@ -10,11 +10,18 @@ public class Category : BaseEntity
     public string Slug { get; private set; }
 
     public ICollection<Post> Posts { get; } = new List<Post>();
-    
-    public Category(string title, string icon, string slug)
+
+
+    private Category(string title, string icon, string slug)
     {
         Title = title;
         Icon = icon;
         Slug = slug;
     }
+
+    public static Category Create(string title, string icon, string slug)
+    {
+        return new Category(title, icon, slug);
+    }
+
 }

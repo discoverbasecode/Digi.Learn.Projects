@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Application\" />
-    <Folder Include="Domain\CategoryAggregate\" />
+    <Folder Include="Application\Queries\" />
     <Folder Include="Infrastructure\" />
+    <Folder Include="Persistence\Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
