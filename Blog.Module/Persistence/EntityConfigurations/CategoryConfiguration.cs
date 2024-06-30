@@ -13,6 +13,10 @@ public class CategoryConfiguration : IEntityTypeConfiguration<Category>
 
         builder.Property(c => c.Title).HasMaxLength(300).IsRequired();
         builder.Property(c => c.Icon).HasMaxLength(1000).IsRequired();
-        builder.Property(c => c.Sluge).HasMaxLength(1500).IsRequired();
+        builder.Property(c => c.Slug).HasMaxLength(1500).IsRequired();
+
+        builder.HasMany(c => c.Posts)
+               .WithOne(c => c.Category)
+               .HasForeignKey(c => c.CategoryId);
     }
 }

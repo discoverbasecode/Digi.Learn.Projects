@@ -1,5 +1,6 @@
 ﻿using Amazon.Runtime.Internal.Util;
 using Blog.Module.Domain.CategoryAggregate;
+using Blog.Module.Domain.PostAggregate;
 using Blog.Module.Persistence.BlogModuleContext;
 
 namespace Blog.Module.Persistence.SeedData;
@@ -27,6 +28,7 @@ public static class SeedDataToDataBase
         dbContext.Categories.AddRange(createCategories);
         dbContext.SaveChanges();
         Logger.EmptyLogger.InfoFormat("Categories Added To Database Succeeded ! ");
+
         transaction.Commit();
     }
 }
