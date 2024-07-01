@@ -6,7 +6,7 @@ public interface IBaseEntity
     public DateTime Created { get; set; }
     public Guid CreatedBy { get; set; }
 
-    public DateTimeOffset LastEdited { get; set; }
+    public DateTime LastEdited { get; set; }
     public Guid? LastEditedBy { get; set; }
 
     public bool IsRemove { get; set; }

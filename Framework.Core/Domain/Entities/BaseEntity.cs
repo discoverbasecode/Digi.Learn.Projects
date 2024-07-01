@@ -7,7 +7,7 @@ public class BaseEntity : IBaseEntity
     public DateTime Created { get; set; } = DateTime.Now;
     public Guid CreatedBy { get; set; }
 
-    public DateTimeOffset LastEdited { get; set; }
+    public DateTime LastEdited { get; set; }
     public Guid? LastEditedBy { get; set; }
 
     public bool IsRemove { get; set; } = false;

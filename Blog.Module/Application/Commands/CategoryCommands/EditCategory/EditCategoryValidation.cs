@@ -1,11 +1,11 @@
 ﻿using FluentValidation;
 using Framework.Core.Application.Messages;
 
-namespace Blog.Module.Application.Commands.CategoryCommands.CreateCategory;
+namespace Blog.Module.Application.Commands.CategoryCommands.EditCategory;
 
-public class CreateCategoryValidation : AbstractValidator<CreateCategoryRequest>
+public class EditCategoryValidation : AbstractValidator<EditCategoryRequest>
 {
-    public CreateCategoryValidation()
+    public EditCategoryValidation()
     {
         RuleFor(c => c.Title)
             .NotEmpty().WithMessage(ValidationMessages.Required)

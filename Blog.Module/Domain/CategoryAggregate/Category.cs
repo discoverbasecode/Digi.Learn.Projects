@@ -11,7 +11,7 @@ public class Category : BaseEntity
 
     public ICollection<Post> Posts { get; } = new List<Post>();
 
-
+    public Category() { }
     private Category(string title, string icon, string slug)
     {
         Title = title;
@@ -22,6 +22,16 @@ public class Category : BaseEntity
     public static Category Create(string title, string icon, string slug)
     {
         return new Category(title, icon, slug);
+    }
+
+
+    public void Edit(string title, string icon, string slug)
+    {
+        Title = title;
+        Icon = icon;
+        Slug = slug;
+        LastEdited = DateTime.Now;
+
     }
 
 }
