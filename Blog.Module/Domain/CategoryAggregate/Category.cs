@@ -34,4 +34,12 @@ public class Category : BaseEntity
 
     }
 
+    public void Remove()
+    {
+
+        IsRemove = true;
+        Removed = DateTime.Now;
+
+    }
+
 }
