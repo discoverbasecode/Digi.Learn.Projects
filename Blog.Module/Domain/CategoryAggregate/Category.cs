@@ -42,4 +42,12 @@ public class Category : BaseEntity
 
     }
 
+    public void Restore()
+    {
+
+        IsRemove = false;
+        Removed = DateTime.Now;
+
+    }
+
 }
